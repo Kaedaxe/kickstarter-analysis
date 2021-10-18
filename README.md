@@ -7,8 +7,13 @@ The primary purpose of this exercise is to extract specific information from a s
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
+Creating a pivot table with Year and Parent Category as filters required extra columns of data, making Parent Category and Subcategory independent columns and Unix time into a readable date and an isolated year. The former required the "Text to Columns" tool of Excel, while the latter required applying a Unix-time converting equation (=X/86400+DATE(1970,1,1)) to increment the number of days from Unix's default time of Jan. 1, 1970. The resulting pivot table used these parameters to generate, with "outcomes2" representing an identical dataset to "outcomes".
+![image](https://user-images.githubusercontent.com/77989740/137660736-2b00689a-a3cd-4c66-98fb-402996a1cc5d.png)
 
 ### Analysis of Outcomes Based on Goals
+Generating new columns from existing data was straightforward - a combination of Excel's functions COUNTIFS, COUNTIF, and SUM accomplished isolating everything necessary to create an effective graph. The function ROUND was not needed for percentiles, as Excel's toolbar accomodates for displaying simple division as a percentile with any desired level of precision. To best represent fractions such as 2/3, 4/6, and 2/16, I designed my percentiles with one decimal point. 
+![image](https://user-images.githubusercontent.com/77989740/137661623-61f8ff2e-6dd1-402d-9118-ed9736d0aa23.png)
+
 
 ### Challenges and Difficulties Encountered
 When working with the pivot table in the Outcomes Based on Launch Date, I found it difficult to have the outcomes both as a counted variable and a column divider. To overcome this, I duplicated the outcomes column in my Raw Data sheet, naming the latter "outcomes2". I'm unsure if there are solutions to this issue without having to disturb the original dataset. I also found saving the graphs as independent .png files took a roundabout solution of copying the chart into MSPaint first. 
@@ -20,7 +25,7 @@ There's a significant increase of overall attempts and successes in theater-base
 
 - What can you conclude about the Outcomes based on Goals?
 
-While the most successful goal value is less than $5000, there's a range of ~$5000-$25000 where the percentage of successful kickstarters remains roughly the same with a slight decline. More ambitious plays requiring larger budgets should aim to stay under this mark, as anything beyond $25000 only has an overall success rate of 40% in its small sample size. 
+While the most successful goal value is less than $5000, there's a range of ~$5000-$25000 where the percentage of successful kickstarters remains roughly the same with a slight decline. More ambitious plays requiring larger budgets should aim to stay under this mark, as anything beyond $25000 only has an overall success rate of 40% in its small sample size. I can also note that not a single play-based kickstarter canceled before the funding deadline, and having no outlier in over 1000 campaigns is unusual. 
 
 - What are some limitations of this dataset?
 
