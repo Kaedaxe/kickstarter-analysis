@@ -8,6 +8,7 @@ The primary purpose of this exercise is to extract specific information from a s
 
 ### Analysis of Outcomes Based on Launch Date
 Creating a pivot table with Year and Parent Category as filters required extra columns of data, making Parent Category and Subcategory independent columns and Unix time into a readable date and an isolated year. The former required the "Text to Columns" tool of Excel, while the latter required applying a Unix-time converting equation (=X/86400+DATE(1970,1,1)) to increment the number of days from Unix's default time of Jan. 1, 1970. The resulting pivot table used these parameters to generate, with "outcomes2" representing an identical dataset to "outcomes".
+
 ![image](https://user-images.githubusercontent.com/77989740/137660736-2b00689a-a3cd-4c66-98fb-402996a1cc5d.png)
 
 ### Analysis of Outcomes Based on Goals
