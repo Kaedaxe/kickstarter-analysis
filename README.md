@@ -12,6 +12,7 @@ Creating a pivot table with Year and Parent Category as filters required extra c
 
 ### Analysis of Outcomes Based on Goals
 Generating new columns from existing data was straightforward - a combination of Excel's functions COUNTIFS, COUNTIF, and SUM accomplished isolating everything necessary to create an effective graph. The function ROUND was not needed for percentiles, as Excel's toolbar accomodates for displaying simple division as a percentile with any desired level of precision. To best represent fractions such as 2/3, 4/6, and 2/16, I designed my percentiles with one decimal point. 
+
 ![image](https://user-images.githubusercontent.com/77989740/137661623-61f8ff2e-6dd1-402d-9118-ed9736d0aa23.png)
 
 
